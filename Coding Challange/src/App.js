@@ -142,7 +142,7 @@ export function App() {
 
   const [timedPopup, setTimedPopup] = useState(false);
 
-  useEffect(() => { setTimeout(() => { setTimedPopup(true) }, 100) }, [])
+  useEffect(() => { setTimeout(() => { setTimedPopup(true) }, 10000) }, [])
 
 
 
