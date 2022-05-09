@@ -2,9 +2,9 @@ import React from "react";
 
 export const Footer = () => {
 
-    return(
+    return (
         <div id="footer">
-             
+
         </div>
     )
 }

@@ -245,7 +245,7 @@ body {
 
 .box {
     position: relative;
-    width: 40%;
+    width: 50%;
     min-height: 500px;
     background-color: white;
     border: 1px solid #999;
@@ -260,23 +260,29 @@ p {
     align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.box img {
-    padding: 30px 60px;
+#popup-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+#popup-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-close {
     cursor: pointer;
     border-radius: 5%;
+    display: inline-block;
     border: none;
-    float: inline-end;
     padding: 12px 32px;
-    margin: 10px 50px;
-    top: 15px;
-    width: 32%;
+    margin: 25px 20px;
+    width: 25%;
 }
 
 #purple-button {
@@ -329,7 +335,7 @@ p {
     background-color: grey;
     width: 100%;
     height: 300px;
-    
+
 }
 
 #contact img {
@@ -339,19 +345,58 @@ p {
 
 
 @media (max-width:500px) {
-  .main-title{
-      font-size: 25px;
-      
-  }
-  #contact{
-      display: flex;
-      flex-direction: column;
-  }
-  #nav{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0px 10px;
+    .main-title {
+        font-size: 25px;
 
-  }
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px;
+
+    }
+
+    .box {
+        position: relative;
+        width: 60%;
+        min-height: 210px;
+        background-color: white;
+        border: 1px solid #999;
+        border-radius: 4px;
+        margin: 150px 100px;
+        padding: 10px 0px;
+        overflow: auto;
+    }
+
+    .box h2 {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .box p {
+        font-size: 13px;
+    }
+
+    .box img {
+        width: 146px;
+        padding: 5px 16px;
+    }
+
+    .btn-close {
+        width: 190px;
+        padding: 5px 16px;
+        margin: 10px 50px;
+        width: 50%;
+    }
+
+    #green-button {
+        padding: 5px 5px;
+    }
 }

@@ -140,16 +140,9 @@ var press = [
 
 export function App() {
 
-  const [timedPopup, setTimedPopup] = useState(
-    JSON.parse(localStorage.getItem('is-open') === false)
-  );
+  const [timedPopup, setTimedPopup] = useState(false);
 
-  useEffect(()=>{
-    setTimeout(()=>{
-     localStorage.setItem('is-open', JSON.stringify(timedPopup));
-    },30)
-  },[timedPopup])
-
+  useEffect(() => { setTimeout(() => { setTimedPopup(true) }, 100) }, [])
 
 
 
