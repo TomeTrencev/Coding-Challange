@@ -142,7 +142,18 @@ export function App() {
 
   const [timedPopup, setTimedPopup] = useState(false);
 
-  useEffect(() => { setTimeout(() => { setTimedPopup(true) }, 10000) }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      if (localStorage.getItem("microBusinessLoans") === null) {
+        setTimedPopup(true);
+      }
+    }, 10000)
+  }, [])
+
+  function microBusinessLoans(answer) {
+    localStorage.setItem("microBusinessLoans", answer);
+    setTimedPopup(false);
+  }
 
 
 
@@ -155,8 +166,7 @@ export function App() {
         <Route path="/press" element={<Press press={press} />} />
       </Routes>
       {timedPopup && <Popup
-        trigger={timedPopup}
-        setTrigger={setTimedPopup}
+        setAnswer={microBusinessLoans}
       />}
       <Contact />
       <Footer />

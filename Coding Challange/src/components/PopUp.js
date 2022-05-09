@@ -12,8 +12,8 @@ export const Popup = (props) => {
                     <img src="https://test.enterpriseleague.com/static/media/green.f01efa95.svg" alt=""></img>
                 </div>
                 <div id="popup-buttons">
-                    <button id="purple-button" className="btn-close" onClick={() => props.setTrigger(false)}>NOT REALLY</button>
-                    <button id="green-button" className="btn-close" onClick={() => props.setTrigger(false)}>YES! EXTRA MONEY</button>
+                    <button id="purple-button" className="btn-close" onClick={() => props.setAnswer(false)}>NOT REALLY</button>
+                    <button id="green-button" className="btn-close" onClick={() => props.setAnswer(true)}>YES! EXTRA MONEY</button>
                 </div>
             </div>
         </div>
